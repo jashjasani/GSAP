@@ -133,7 +133,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/virtual-scroll@2.1.1/lib/virtualscroll.min.js"></script>
 <script type="text/javascript">
-    console.clear()
 
     let ww = window.innerWidth
     let wh = window.innerHeight
@@ -196,7 +195,7 @@
         addEvents() {
             gsap.ticker.add(this.tick)
 
-            window.addEventListener('touchmove', this.onuseMove)
+            window.addEventListener('pointer', this.onMouseMove)
             window.addEventListener('touchstart', this.onMouseDown)
             window.addEventListener('touchend', this.onMouseUp)
             //window.addEventListener('wheel', this.onWheel)
