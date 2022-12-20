@@ -51,6 +51,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            touch-action: none;
         }
 
         figure {
@@ -195,10 +196,10 @@
         addEvents() {
             gsap.ticker.add(this.tick)
 
-            //window.addEventListener('pointermove', this.onMouseMove)
+            window.addEventListener('pointermove', this.onMouseMove)
             window.addEventListener('pointerdown', this.onMouseDown)
             window.addEventListener('pointerup', this.onMouseUp)
-            //window.addEventListener('wheel', this.onWheel)
+            window.addEventListener('wheel', this.onWheel)
         }
 
         addPlanes() {
