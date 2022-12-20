@@ -196,9 +196,9 @@
         addEvents() {
             gsap.ticker.add(this.tick)
 
-            window.addEventListener('pointermove', this.onuseMove)
-            window.addEventListener('pointerdown', this.onMouseDown)
-            window.addEventListener('pointerup', this.onMouseUp)
+            window.addEventListener('touchmove', this.onuseMove)
+            window.addEventListener('touchdown', this.onMouseDown)
+            window.addEventListener('touchup', this.onMouseUp)
             //window.addEventListener('wheel', this.onWheel)
         }
 
